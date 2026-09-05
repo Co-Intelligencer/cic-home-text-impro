@@ -1,0 +1,4 @@
+node_modules/
+.reference/
+.preview.log
+.preview-error.log

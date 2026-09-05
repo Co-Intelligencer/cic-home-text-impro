@@ -1,0 +1,100 @@
+{
+  "title": "Help your group find coherence | Co-Intelligence Circle",
+  "description": "Give every voice room. Build coherence, trust and clarity in your group with online talking-stick circles. Start your circle for free.",
+  "hero": {
+    "heading": "Help your group<br><em>find coherence.</em><br>One voice<br>at a time.",
+    "intro": "Bring your group into an online talking circle. Give every voice time to speak and space to listen. You guide the conversation; a visible talking stick holds the rhythm.",
+    "cta": "Start your circle for free",
+    "secondary": "Try the circle"
+  },
+  "benefits": {
+    "eyebrow": "What your group can build",
+    "heading": "More understanding.<br>More <em>coherence</em>.",
+    "cards": [
+      ["Give every voice room.", "Each person has a full turn to speak. You can hear the whole thought, listen across differences, and understand what each person brings."],
+      ["Build trust, one round at a time.", "A turn for every person gives quieter voices space. Your group can bring tensions into the conversation and find its next step together."],
+      ["Save time over the long run.", "When your group builds coherence, decisions have a shared foundation. That clarity can save time in collaboration and help you work together with trust and peace of mind."]
+    ]
+  },
+  "room": {
+    "eyebrow": "A room that supports your attention",
+    "heading": "See your people.<br>Feel the <em>rhythm</em>.",
+    "intro": "Everyone stays in view around a shared center. The speaking turn is clear, so you can stay with the person speaking and the conversation taking shape."
+  },
+  "method": {
+    "eyebrow": "Your first circle",
+    "heading": "Bring your people.<br>Begin <em>listening</em>.",
+    "intro": "A few simple choices prepare the room. Your group brings the conversation.",
+    "steps": [
+      ["Prepare your circle", "Name your room, choose an optional timer, and set a shared center for your group."],
+      ["Invite your people", "Share one link. Your guests join directly in their browser, ready to take their place."],
+      ["Listen, then pass the stick", "Let each person finish their thought. Leave room for silence before the next voice begins."]
+    ]
+  },
+  "practice": {
+    "eyebrow": "A practice you carry together",
+    "heading": "An old practice. Your living conversation.",
+    "intro": "People have gathered in circles for generations. You carry that practice into your own group, with each tool supporting the way you choose to meet."
+  },
+  "modes": {
+    "eyebrow": "You choose how to meet",
+    "heading": "Your people come first.<br>Start in <em>Human Mode</em>.",
+    "intro": "You have a complete circle in Human Mode. Invite Milo or live translation when they serve your group, with each active feature visible to everyone.",
+    "humanLead": "Everything you need to hold a circle.",
+    "aiLead": "An extra perspective, at your invitation.",
+    "boundary": "Your group can see which features are active. You choose when listening, recording, or transcription begins."
+  },
+  "audience": {
+    "eyebrow": "For the people you bring together",
+    "heading": "You hold the space.<br>Your group finds its <em>way</em>.",
+    "intro": "Whether you guide circles for a living or gather people around a shared question, give each person room to contribute.",
+    "cards": [
+      ["Guide with your full attention.", "Give your clients protected speaking time. Simple invitations and a clear rhythm help you stay present with the people you guide."],
+      ["Find a shared way forward.", "Bring every perspective into retros, decisions, and conversations that need care. Build the understanding your team can act on."],
+      ["Hold space for a whole thought.", "Set a visible rhythm for your group. Each person has room to finish, with the clarity and care your practice calls for."],
+      ["Learn with every voice in the room.", "Help learners and community members listen to each other. Shared attention gives different experiences a place in the conversation."],
+      ["Meet across languages.", "Each listener chooses their own language. Your group can hear one another while the speaker's original voice stays present."],
+      ["Give a meaningful conversation time.", "Gather around the questions you care about. A full turn and space to listen help you meet each other with attention."]
+    ]
+  },
+  "manifesto": {
+    "eyebrow": "Coherence grows through practice",
+    "heading": "Listen for what each person brings.<br><em>Discover what you understand together.</em>",
+    "intro": "Your group can hold different views and still find shared ground. Give the conversation time, let your understanding grow, and carry that clarity into what you do next."
+  },
+  "privacy": {
+    "eyebrow": "Clarity about your conversation",
+    "heading": "Know how your<br><em>conversation</em> is handled.",
+    "intro": "Your video and audio are encrypted in transit and relayed live through Cloudflare's realtime network. You choose when recording begins. Invite Milo with a role in your own words, visible to your group.",
+    "cta": "Read the privacy details"
+  },
+  "pricing": {
+    "eyebrow": "Room to begin",
+    "heading": "You host.<br>Your guests join <em>free</em>.",
+    "intro": "Begin with free video circles. When your group needs Milo, live translation, recording or transcripts, try a paid plan free for 7 days. You can cancel anytime."
+  },
+  "faq": {
+    "eyebrow": "Before you gather",
+    "heading": "Feel ready for<br>your first <em>circle</em>.",
+    "items": [
+      ["How do my guests join?", "Share a link or a six-digit room code. Guests enter directly in their browser and join free. You need an account to host."],
+      ["Can I hold a circle entirely in Human Mode?", "Yes. Human Mode includes the talking stick, circle flow, and optional turn timer. You choose whether to invite Milo or use live translation."],
+      ["How is our conversation handled?", "Video and audio are encrypted in transit and forwarded live through Cloudflare's realtime network. The host chooses when recording begins. Recordings are kept for seven days and can be deleted sooner. When you invite an AI feature, the audio it needs is processed while that feature is active. The platform is built in Germany under European privacy standards."],
+      ["How does Milo take part?", "Milo begins listening when you invite it. You write its role, which guides its participation. A short, published instruction also sets its name, its audio-only participation, and its speaking language. Milo speaks when the talking stick reaches its seat. Your group can see its role and when it is active."],
+      ["What does beta mean for live translation?", "Live translation works today, and you can buy credits to use it. Quality varies by language pair, and the feature may change or briefly pause during improvements. You pay for the minutes it runs. Your circle continues in the original voices if translation pauses."],
+      ["How do we listen across languages?", "Each person chooses their listening language. They hear a translated voice with the original softly present underneath. Translation is billed per listening participant and active minute, and is currently in beta."],
+      ["What happens when our credits run out?", "Your circle continues in Human Mode. Milo leaves and translation pauses, while your group keeps talking. You choose whether to buy more credits; additional charges require your action."],
+      ["Can I use my own branding?", "Your room carries your circle's name. Custom logos and visual identity are in preparation. Talk to us about what your practice or program needs."]
+    ]
+  },
+  "newsletter": {
+    "title": "Keep in touch with the circle.",
+    "intro": "Occasional letters. Unsubscribe in one click."
+  },
+  "final": {
+    "eyebrow": "Your next conversation",
+    "heading": "What could your group<br><em>understand together?</em>",
+    "intro": "Bring your people into a circle. Give your next conversation the attention it deserves, with guests joining freely in their browser.",
+    "cta": "Start your circle"
+  }
+}
