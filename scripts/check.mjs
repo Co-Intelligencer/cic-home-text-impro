@@ -28,7 +28,7 @@ assert.ok($('.media-placeholder').length >= 20, 'Media slots retain labeled plac
 assert.ok(!/[—–]/.test($('body').text()), 'Copy contains no em or en dashes');
 assert.ok(!/not (?:just|only)|but rather|not .*? but /i.test($('body').text()), 'No formulaic negative comparisons');
 assert.ok($('body').text().includes('peace of mind'), 'Required reader benefit is present');
-assert.ok($('body').text().includes('twelve participant-hours a month'), 'Free plan allowance preserved');
+assert.ok($('.price-card').first().text().includes('12 participant-hours each month'), 'Free plan allowance preserved');
 if (isAI) assert.ok($('body').text().includes('1,500 pooled credits'), 'Studio credits preserved');
 const prose = $('body *').contents().filter((_, el) => el.type === 'text').map((_, el) => el.data).get().join(' ');
 const attributes = $('[title],[aria-label],meta[content]').map((_, el) => ['title', 'aria-label', 'content'].map(attr => $(el).attr(attr) || '').join(' ')).get().join(' ');
@@ -36,9 +36,9 @@ const allCopy = prose + ' ' + attributes;
 assert.ok(!/\b(?:always|forever|never|guarantee\w*|gdpr|germany|german|european)\b|EU privacy|nothing else|everything you need|[—–]/i.test(allCopy), 'No broad promises, compliance claims or unwanted punctuation');
 assert.ok(!/seven[ -]day|after (?:7|seven) days/i.test(allCopy), 'No fixed recording-retention promise');
 assert.ok(prose.includes('after a period of time to reduce server costs'), 'Updated retention explanation');
-assert.equal((prose.match(/\brole\b/gi) || []).length, isAI ? 1 : 0, 'Role customization appears once on AI page');
+assert.equal((prose.match(/\brole\b/gi) || []).length, 0, 'Role customization belongs in the setup subpage');
 if (isAI) {
-  assert.match($('#method').text(), /adjust Milo's role/);
+  assert.ok($('#method a[href$="how-it-works/#steps"]').length, 'AI setup links to the full guide');
   assert.match($('.hero-intro').text(), /conversation in real time/);
   assert.match($('#credits').text(), /2 credits per listener per active minute/);
 } else {
@@ -100,7 +100,7 @@ window.eval(script);
 const q = s => window.document.querySelector(s);
 const all = s => [...window.document.querySelectorAll(s)];
 assert.equal(all('#mmenu').length, 1, 'Mobile menu has a unique ID');
-assert.ok(q('#mmenu a[href="https://www.co-intelligence.online/join"]'), 'Mobile menu retains Join a circle');
+assert.ok(all('#mmenu a').some(link => new URL(link.href).href === base + audience + '/join/'), 'Mobile menu retains Join a circle');
 q('button[aria-controls="mmenu"]').click();
 assert.equal(q('#mmenu').hidden, false, 'Mobile menu opens');
 window.document.dispatchEvent(new window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));

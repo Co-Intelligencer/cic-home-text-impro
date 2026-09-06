@@ -105,6 +105,7 @@ label('.privacy-copy .text-link', copy.privacy.cta);
 $('.trust-row > div').eq(1).after('<div class="ai-detail"><strong>Invited</strong><span>AI joins by invitation</span></div>');
 heading('#pricing', copy.pricing);
 text('.pricing-heading > p:not(.pricing-free-limits)', copy.pricing.intro);
+$('.pricing-free-limits').remove();
 heading('#faq', copy.faq);
 $('.faq-list').empty();
 for (const [i, [question, answer]] of copy.faq.items.entries()) {
@@ -371,3 +372,4 @@ for (const name of await fs.readdir('docs/assets')) {
 }
 await fs.writeFile('docs/.nojekyll', '');
 console.log('Built both audience versions for GitHub Pages.');
+await import('./build-subpages.mjs');

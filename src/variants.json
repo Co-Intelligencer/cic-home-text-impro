@@ -59,7 +59,7 @@
       "heading": "More perspectives.<br>Shared <em>coherence</em>.",
       "cards": [
         ["Bring your whole perspective.", "Your experience, intuition and ideas belong in the conversation. Give each person a full turn and hear what your group understands together."],
-        ["Invite AI into the conversation.", "Milo listens alongside your group in real time and contributes when the talking stick reaches its seat."],
+        ["Invite AI into the conversation.", "Milo listens alongside your group in real time and contributes when the talking stick reaches its seat, or when its name is called in an open round."],
         ["Put shared clarity to work.", "Building coherence takes time and attention. The understanding you develop can save time in collaboration, with greater trust in your teamwork and more peace of mind."]
       ]
     },
@@ -73,9 +73,9 @@
       "heading": "Gather your people.<br>Invite a <em>perspective</em>.",
       "intro": "Set up your circle, invite your people, and bring Milo into the conversation.",
       "steps": [
-        ["Prepare your circle", "Name the room and set an optional timer. In the circle settings, you can adjust Milo's role to suit your conversation."],
+        ["Prepare your circle", "Name the room, choose a speaking order, and set an optional timer. See the setup guide for more details."],
         ["Invite your people", "Share one link. Guests join in their browser and can choose live translation in their listening language."],
-        ["Listen, then pass the stick", "Give each person a full turn. Milo contributes when the talking stick reaches its seat."]
+        ["Listen, then pass the stick", "Give each person a full turn. Milo contributes on its turn, or when called by name in an open round."]
       ]
     },
     "modes": {
@@ -111,7 +111,7 @@
         ["How do my guests join?", "Host with an account. Guests join free in their browser using a link or six-digit room code."],
         ["How do we choose when AI participates?", "Begin in Human Mode, then invite Milo or live translation when your group wants to use them. The room shows which features are active."],
         ["How is our conversation handled?", "Video and audio are encrypted in transit and relayed live through Cloudflare's realtime network. You choose when recording starts. Saved recordings are automatically deleted after a period of time to reduce server costs. You can delete them sooner. An invited AI feature processes the audio it needs while active."],
-        ["How does Milo take part?", "Milo joins by voice and listens to the conversation in real time. It speaks when the talking stick reaches its seat. You can invite it to join or ask it to leave during the circle."],
+        ["How does Milo take part?", "Milo joins by voice and listens to the conversation in real time. It speaks on its turn, or when its name is called in an open round. You can invite it to join or ask it to leave during the circle."],
         ["What does beta mean for live translation?", "You can use live translation today with credits. Quality varies by language pair, and availability may change as we improve it. You pay for active minutes. If we pause translation, your circle continues in the original voices."],
         ["How do we listen across languages?", "Each person chooses their listening language. They hear a translated voice with the original softly present underneath. Translation uses 2 credits per listener per active minute and is currently in beta."],
         ["What happens when our credits run out?", "Your circle continues in Human Mode. Milo leaves and translation pauses while your group keeps talking. You choose whether to purchase more credits."],

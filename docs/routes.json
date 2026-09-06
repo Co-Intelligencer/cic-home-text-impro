@@ -1,0 +1,272 @@
+[
+  {
+    "directory": "",
+    "audience": "human",
+    "route": "/",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/"
+  },
+  {
+    "directory": "pricing",
+    "audience": "human",
+    "route": "/pricing",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/pricing/"
+  },
+  {
+    "directory": "how-it-works",
+    "audience": "human",
+    "route": "/how-it-works",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/how-it-works/"
+  },
+  {
+    "directory": "for/facilitators",
+    "audience": "human",
+    "route": "/for/facilitators",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/for/facilitators/"
+  },
+  {
+    "directory": "for/therapists",
+    "audience": "human",
+    "route": "/for/therapists",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/for/therapists/"
+  },
+  {
+    "directory": "join",
+    "audience": "human",
+    "route": "/join",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/join/"
+  },
+  {
+    "directory": "who-its-for",
+    "audience": "human",
+    "route": "/who-its-for",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/who-its-for/"
+  },
+  {
+    "directory": "philosophy",
+    "audience": "human",
+    "route": "/philosophy",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/philosophy/"
+  },
+  {
+    "directory": "learner",
+    "audience": "human",
+    "route": "/learner",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/learner/"
+  },
+  {
+    "directory": "about",
+    "audience": "human",
+    "route": "/about",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/about/"
+  },
+  {
+    "directory": "imprint",
+    "audience": "human",
+    "route": "/imprint",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/imprint/"
+  },
+  {
+    "directory": "login",
+    "audience": "human",
+    "route": "/login",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/login/"
+  },
+  {
+    "directory": "features",
+    "audience": "human",
+    "route": "/features",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/features/"
+  },
+  {
+    "directory": "privacy",
+    "audience": "human",
+    "route": "/privacy",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/privacy/"
+  },
+  {
+    "directory": "terms",
+    "audience": "human",
+    "route": "/terms",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/terms/"
+  },
+  {
+    "directory": "human",
+    "audience": "human",
+    "route": "/",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/"
+  },
+  {
+    "directory": "human/pricing",
+    "audience": "human",
+    "route": "/pricing",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/pricing/"
+  },
+  {
+    "directory": "human/how-it-works",
+    "audience": "human",
+    "route": "/how-it-works",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/how-it-works/"
+  },
+  {
+    "directory": "human/for/facilitators",
+    "audience": "human",
+    "route": "/for/facilitators",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/for/facilitators/"
+  },
+  {
+    "directory": "human/for/therapists",
+    "audience": "human",
+    "route": "/for/therapists",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/for/therapists/"
+  },
+  {
+    "directory": "human/join",
+    "audience": "human",
+    "route": "/join",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/join/"
+  },
+  {
+    "directory": "human/who-its-for",
+    "audience": "human",
+    "route": "/who-its-for",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/who-its-for/"
+  },
+  {
+    "directory": "human/philosophy",
+    "audience": "human",
+    "route": "/philosophy",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/philosophy/"
+  },
+  {
+    "directory": "human/learner",
+    "audience": "human",
+    "route": "/learner",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/learner/"
+  },
+  {
+    "directory": "human/about",
+    "audience": "human",
+    "route": "/about",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/about/"
+  },
+  {
+    "directory": "human/imprint",
+    "audience": "human",
+    "route": "/imprint",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/imprint/"
+  },
+  {
+    "directory": "human/login",
+    "audience": "human",
+    "route": "/login",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/login/"
+  },
+  {
+    "directory": "human/features",
+    "audience": "human",
+    "route": "/features",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/features/"
+  },
+  {
+    "directory": "human/privacy",
+    "audience": "human",
+    "route": "/privacy",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/privacy/"
+  },
+  {
+    "directory": "human/terms",
+    "audience": "human",
+    "route": "/terms",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/human/terms/"
+  },
+  {
+    "directory": "ai",
+    "audience": "ai",
+    "route": "/",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/"
+  },
+  {
+    "directory": "ai/pricing",
+    "audience": "ai",
+    "route": "/pricing",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/pricing/"
+  },
+  {
+    "directory": "ai/how-it-works",
+    "audience": "ai",
+    "route": "/how-it-works",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/how-it-works/"
+  },
+  {
+    "directory": "ai/for/facilitators",
+    "audience": "ai",
+    "route": "/for/facilitators",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/for/facilitators/"
+  },
+  {
+    "directory": "ai/for/therapists",
+    "audience": "ai",
+    "route": "/for/therapists",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/for/therapists/"
+  },
+  {
+    "directory": "ai/join",
+    "audience": "ai",
+    "route": "/join",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/join/"
+  },
+  {
+    "directory": "ai/who-its-for",
+    "audience": "ai",
+    "route": "/who-its-for",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/who-its-for/"
+  },
+  {
+    "directory": "ai/philosophy",
+    "audience": "ai",
+    "route": "/philosophy",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/philosophy/"
+  },
+  {
+    "directory": "ai/learner",
+    "audience": "ai",
+    "route": "/learner",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/learner/"
+  },
+  {
+    "directory": "ai/about",
+    "audience": "ai",
+    "route": "/about",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/about/"
+  },
+  {
+    "directory": "ai/imprint",
+    "audience": "ai",
+    "route": "/imprint",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/imprint/"
+  },
+  {
+    "directory": "ai/login",
+    "audience": "ai",
+    "route": "/login",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/login/"
+  },
+  {
+    "directory": "ai/features",
+    "audience": "ai",
+    "route": "/features",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/features/"
+  },
+  {
+    "directory": "ai/privacy",
+    "audience": "ai",
+    "route": "/privacy",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/privacy/"
+  },
+  {
+    "directory": "ai/terms",
+    "audience": "ai",
+    "route": "/terms",
+    "canonical": "https://co-intelligencer.github.io/cic-home-text-impro/ai/terms/"
+  }
+]

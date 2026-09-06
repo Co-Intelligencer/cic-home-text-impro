@@ -55,7 +55,7 @@
   mobileMenu.id = 'mmenu';
   mobileMenu.className = 'mobile-menu';
   mobileMenu.hidden = true;
-  [...navLinks, q('.mnav-start'), q('.flinks a[href$="/join"]'), q('.mnav-icon')].forEach(link => {
+  [...navLinks, q('.mnav-start'), q('.flinks a[href*="join"]'), q('.mnav-icon')].filter(Boolean).forEach(link => {
     const clone = link.cloneNode(true);
     clone.className = '';
     clone.removeAttribute('data-menu');
@@ -93,6 +93,7 @@
 
   // A local, visual talking-stick demonstration, with all media left as placeholders.
   const room = q('.product-room');
+  if (room) {
   const originalPeople = all('.product-person:not(.milo-person)', room);
   const milo = q('.milo-person', room);
   let invited = true;
@@ -177,6 +178,7 @@
   if (miloButton) miloButton.addEventListener('click', () => { invited = !invited; renderRoom(); });
   new ResizeObserver(positionPeople).observe(room);
   renderRoom();
+  }
 
   all('.rail-handle').forEach(button => button.addEventListener('click', () => {
     const card = button.closest('.price-card');
@@ -203,14 +205,38 @@
     button.addEventListener('blur', () => toggle(false));
     button.addEventListener('keydown', event => { if (event.key === 'Escape') { event.stopPropagation(); toggle(false); } });
   });
-  q('.join-form').addEventListener('submit', event => {
+  q('.join-form')?.addEventListener('submit', event => {
     event.preventDefault();
     const note = q('.signup-note');
     note.replaceChildren();
     const link = document.createElement('a');
-    link.href = 'https://www.co-intelligence.online/#join';
-    link.textContent = 'Complete your subscription on Co-Intelligence Circle.';
+    link.href = q('.join-form').dataset.signupDestination || 'https://www.co-intelligence.online/#join';
+    link.textContent = q('.join-form').dataset.signupDestination ? 'Continue to cohort signup on Co-Intelligence Circle.' : 'Complete your subscription on Co-Intelligence Circle.';
     note.append(link);
     link.focus();
   });
+  all('[data-billing]').forEach(button => button.addEventListener('click', () => {
+    const annual = button.dataset.billing === 'annual';
+    all('[data-billing]').forEach(option => { const selected = option === button; option.setAttribute('aria-checked', String(selected)); option.classList.toggle('is-on', selected); });
+    const annualRates = { starter: '10.00', basic: '22.50', pro: '40.83' };
+    all('[data-plan]').forEach(card => {
+      const price = q('.plan-price', card);
+      price.innerHTML = annual ? `€${annualRates[card.dataset.plan]}<small>/ mo</small>${card.dataset.plan === 'basic' ? '<span class="plan-was">€32.50 <span class="sr-only">regular monthly equivalent</span></span>' : ''}` : price.dataset.monthlyHtml;
+      q('[data-billing-note]', card).textContent = annual ? 'per month, billed annually' : 'per month';
+      const promo = q('.plan-offer', card);
+      if (promo) promo.textContent = annual ? 'Introductory rate' : 'for your first 3 months';
+    });
+  }));
+  q('.room-code-form')?.addEventListener('submit', event => {
+    event.preventDefault();
+    const code = q('#code').value.replace(/\s/g, '');
+    if (!/^\d{6}$/.test(code)) { q('#code').setCustomValidity('Enter the six-digit room code.'); q('#code').reportValidity(); return; }
+    q('#code').setCustomValidity('');
+    const note = q('.room-code-note');
+    note.replaceChildren(document.createTextNode(`Your code is ${code}. Continue to the live site and enter it to join. `));
+    const link = document.createElement('a'); link.href = 'https://www.co-intelligence.online/join'; link.textContent = 'Continue to your circle'; note.append(link); link.focus();
+  });
+  q('#code')?.addEventListener('input', () => q('#code').setCustomValidity(''));
+  const signIn = q('.auth-card a[data-live-link]');
+  if (signIn && new URLSearchParams(window.location.search).get('intent') === 'host') signIn.href = 'https://www.co-intelligence.online/login?intent=host';
 })();

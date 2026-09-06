@@ -1,0 +1,58 @@
+[
+  {
+    "route": "/pricing",
+    "slug": "pricing"
+  },
+  {
+    "route": "/how-it-works",
+    "slug": "how-it-works"
+  },
+  {
+    "route": "/for/facilitators",
+    "slug": "for--facilitators"
+  },
+  {
+    "route": "/for/therapists",
+    "slug": "for--therapists"
+  },
+  {
+    "route": "/join",
+    "slug": "join"
+  },
+  {
+    "route": "/who-its-for",
+    "slug": "who-its-for"
+  },
+  {
+    "route": "/philosophy",
+    "slug": "philosophy"
+  },
+  {
+    "route": "/learner",
+    "slug": "learner"
+  },
+  {
+    "route": "/about",
+    "slug": "about"
+  },
+  {
+    "route": "/imprint",
+    "slug": "imprint"
+  },
+  {
+    "route": "/login",
+    "slug": "login"
+  },
+  {
+    "route": "/features",
+    "slug": "features"
+  },
+  {
+    "route": "/privacy",
+    "slug": "privacy"
+  },
+  {
+    "route": "/terms",
+    "slug": "terms"
+  }
+]
