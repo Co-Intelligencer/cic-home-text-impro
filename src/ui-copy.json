@@ -1,0 +1,28 @@
+{
+  "betaBanner": "Co-Intelligence Circle is in early public beta.",
+  "betaDetail": "Live translation is available today. Quality varies by language pair, and availability may change during improvements. If translation pauses, your circle continues in the original voices.",
+  "tooltips": {
+    "participants": "The participant limit includes you as host. Guests join free by link or six-digit room code.",
+    "30-minute sessions": "Each circle lasts up to 30 minutes. Hold more circles within your monthly participant-hours.",
+    "Unlimited session length": "Hold circles of any length, as often as your monthly participant-hours allow.",
+    "participantHours": "Add up each person's time in your circles. One person for an hour uses one participant-hour; eight people use eight. Larger circles cost more because each person receives everyone else's video.",
+    "Recording & transcript export": "Save circle video and export transcripts as text. Recordings are automatically deleted after a period of time to reduce server costs.",
+    "Recording export": "Save your circle as a video file. Recordings are automatically deleted after a period of time to reduce server costs.",
+    "3 breakout rooms": "Open up to three smaller rooms for group conversations, then bring everyone back to the main circle.",
+    "3 facilitator seats": "Each seat lets one facilitator host circles. Guests join free, and their time counts toward your monthly participant-hours."
+  },
+  "humanPlanNotes": [
+    "Start with free video circles. Try your first paid plan free for 7 days when your group needs more room or time.",
+    "For regular circles with one facilitator.",
+    "For regular circles with up to 12 people.",
+    "For your professional practice, with recording and breakout rooms.",
+    "For a practice or team of facilitators."
+  ],
+  "aiPlanNotes": [
+    "Start with free video circles. Try your first paid plan free for 7 days to explore Milo and live translation.",
+    "For regular Human Mode circles with one facilitator.",
+    "For regular circles with Milo and live translation.",
+    "For your professional practice, with more AI credits, recording and transcripts.",
+    "For a team of facilitators sharing credits and participant-hours."
+  ]
+}

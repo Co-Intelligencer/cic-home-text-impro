@@ -3,7 +3,7 @@
   const q = (selector, root = document) => root.querySelector(selector);
   const all = (selector, root = document) => [...root.querySelectorAll(selector)];
   const landing = q('.landing-mode');
-  const page = q('.lv3');
+  const isAI = landing.dataset.mode === 'milo';
 
   // Desktop navigation shares the original dropdown geometry.
   const nav = q('.mnav');
@@ -93,32 +93,27 @@
 
   // A local, visual talking-stick demonstration, with all media left as placeholders.
   const room = q('.product-room');
-  const originalPeople = all('.product-person', room);
-  const milo = originalPeople[0].cloneNode(true);
-  q('.seat-name', milo).textContent = 'Milo';
-  q('.media-placeholder', milo).setAttribute('aria-label', 'Milo image placeholder');
-  q('.media-placeholder > span', milo).textContent = 'Milo';
-  milo.classList.remove('is-speaking');
-  milo.classList.add('milo-person');
-  room.append(milo);
+  const originalPeople = all('.product-person:not(.milo-person)', room);
+  const milo = q('.milo-person', room);
   let invited = true;
-  let speaking = 0;
+  let speaking = isAI ? originalPeople.length : 0;
   let flow = 'Sunwise';
   const flowButtons = all('.demo-flow button');
   const pass = q('.demo-pass');
   const hand = q('.seat-hand');
-  const miloButton = document.createElement('button');
-  miloButton.type = 'button';
-  miloButton.className = 'demo-milo ai-detail';
-  const audio = document.createElement('span');
-  audio.className = 'audio-placeholder ai-detail';
-  audio.textContent = 'Audio placeholder';
-  q('.demo-flow').before(audio, miloButton);
-  const aiSetting = document.createElement('div');
-  aiSetting.className = 'ai-detail';
-  aiSetting.innerHTML = '<span>AI · Milo</span><strong>In the circle</strong>';
-  q('.product-settings > div').after(aiSetting);
-  function people() { return invited && landing.dataset.mode === 'milo' ? [...originalPeople, milo] : originalPeople; }
+  const miloButton = isAI ? document.createElement('button') : null;
+  const aiSetting = isAI ? document.createElement('div') : null;
+  if (isAI) {
+    miloButton.type = 'button';
+    miloButton.className = 'demo-milo';
+    const audio = document.createElement('span');
+    audio.className = 'audio-placeholder';
+    audio.textContent = 'Audio placeholder';
+    q('.demo-flow').before(audio, miloButton);
+    aiSetting.innerHTML = '<span>AI · Milo</span><strong>In the circle</strong>';
+    q('.product-settings > div').after(aiSetting);
+  }
+  function people() { return invited && isAI ? [...originalPeople, milo] : originalPeople; }
   function nextIndex() { const count = people().length; return (speaking + (flow === 'Earthwise' ? -1 : 1) + count) % count; }
   function positionPeople() {
     const seats = people();
@@ -141,7 +136,7 @@
   function renderRoom() {
     const seats = people();
     if (speaking >= seats.length) speaking = 0;
-    milo.hidden = !seats.includes(milo);
+    if (milo) milo.hidden = !seats.includes(milo);
     seats.forEach((seat, i) => {
       const name = q('.seat-name', seat).textContent;
       const active = i === speaking;
@@ -153,54 +148,35 @@
       seat.setAttribute('aria-label', active ? `${name} holds the stick` : eligible ? `Pass the stick to ${name}` : `${name}, waiting for their turn`);
     });
     q('.demo-stick-card strong').textContent = `${q('.seat-name', seats[speaking]).textContent} · 02:47`;
-    q('.product-room-meta > span').textContent = `Demo circle · ${seats.length} people`;
+    q('.product-room-meta > span').textContent = `Demo circle · ${seats.length} participants`;
     q('.product-room-meta > span:last-child').textContent = flow;
     q('.product-settings > div strong').textContent = flow === 'Sunwise' ? 'Sunwise · clockwise' : flow === 'Earthwise' ? 'Earthwise · counterclockwise' : 'Open round · choose a voice';
-    q('strong', aiSetting).textContent = invited ? 'In the circle' : 'By invitation';
-    q('.product-room-title div > span').textContent = `#530129 · ${landing.dataset.mode === 'milo' ? 'AI invited' : 'Human Mode'}`;
+    if (aiSetting) q('strong', aiSetting).textContent = invited ? 'In the circle' : 'Ready to invite';
+    q('.product-room-title div > span').textContent = `#530129 · ${isAI && invited ? 'AI invited' : 'Human Mode'}`;
     flowButtons.forEach(button => { const active = button.textContent === flow; button.classList.toggle('is-on', active); button.setAttribute('aria-pressed', String(active)); });
     const nextName = q('.seat-name', seats[nextIndex()]).textContent;
     hand.setAttribute('aria-label', `Pass the stick to ${nextName}`);
     hand.title = `Pass the stick to ${nextName}`;
     hand.hidden = flow === 'Open round';
     pass.textContent = flow === 'Open round' ? 'Pass to next voice' : 'Pass the stick';
-    miloButton.textContent = invited ? 'Milo leaves' : 'Invite Milo';
-    miloButton.setAttribute('aria-pressed', String(invited));
+    if (miloButton) {
+      miloButton.textContent = invited ? 'Ask Milo to leave' : 'Invite Milo';
+      miloButton.setAttribute('aria-pressed', String(invited));
+    }
     positionPeople();
   }
   function passStick(index = nextIndex()) {
     speaking = index;
     renderRoom();
-    q('.demo-hint').textContent = `${q('.seat-name', people()[speaking]).textContent} has the stick. ${flow === 'Open round' ? 'Choose the next person when this turn is complete.' : 'Pass it on when this turn is complete.'}`;
+    q('.demo-hint').textContent = `${q('.seat-name', people()[speaking]).textContent} has the stick. ${flow === 'Open round' ? 'Choose who speaks next when the turn is complete.' : 'Pass the stick when the turn is complete.'}`;
   }
-  [...originalPeople, milo].forEach(seat => seat.addEventListener('click', () => { if (!seat.disabled) passStick(people().indexOf(seat)); }));
+  [...originalPeople, milo].filter(Boolean).forEach(seat => seat.addEventListener('click', () => { if (!seat.disabled) passStick(people().indexOf(seat)); }));
   pass.addEventListener('click', () => passStick());
   hand.addEventListener('click', () => passStick());
   flowButtons.forEach(button => button.addEventListener('click', () => { flow = button.textContent; renderRoom(); q('.demo-hint').textContent = flow === 'Open round' ? 'Choose any person to take the next turn.' : `The stick now moves ${flow === 'Sunwise' ? 'clockwise' : 'counterclockwise'}.`; }));
-  miloButton.addEventListener('click', () => { invited = !invited; renderRoom(); });
+  if (miloButton) miloButton.addEventListener('click', () => { invited = !invited; renderRoom(); });
   new ResizeObserver(positionPeople).observe(room);
-
-  function setMode(mode) {
-    const ai = mode === 'milo';
-    landing.dataset.mode = ai ? 'milo' : 'human';
-    page.dataset.variant = landing.dataset.mode;
-    all('.landing-mode-dock button').forEach(button => {
-      const active = button.dataset.setMode === landing.dataset.mode;
-      button.classList.toggle('is-active', active);
-      button.classList.toggle('is-ai', button.dataset.setMode === 'milo');
-      button.setAttribute('aria-pressed', String(active));
-      button.disabled = active;
-    });
-    q('[data-toggle-mode]').textContent = ai ? 'Hide the AI features' : 'Show the AI features';
-    if (openMenu >= 0) showMenu(openMenu);
-    renderRoom();
-  }
-  all('[data-set-mode]').forEach(button => button.addEventListener('click', () => {
-    setMode(button.dataset.setMode);
-    if (button.closest('.compare-col')) q('#room').scrollIntoView({ behavior: 'smooth' });
-  }));
-  q('[data-toggle-mode]').addEventListener('click', () => setMode(landing.dataset.mode === 'milo' ? 'human' : 'milo'));
-  setMode('milo');
+  renderRoom();
 
   all('.rail-handle').forEach(button => button.addEventListener('click', () => {
     const card = button.closest('.price-card');
@@ -233,7 +209,7 @@
     note.replaceChildren();
     const link = document.createElement('a');
     link.href = 'https://www.co-intelligence.online/#join';
-    link.textContent = 'Continue on Co-Intelligence Circle to finish signing up.';
+    link.textContent = 'Complete your subscription on Co-Intelligence Circle.';
     note.append(link);
     link.focus();
   });

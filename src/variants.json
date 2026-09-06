@@ -1,0 +1,126 @@
+{
+  "human": {
+    "title": "Find coherence through human connection | Co-Intelligence Circle",
+    "description": "Bring your personal insight and your group's collective intelligence together. Online talking circles for deep listening, trust and shared wisdom.",
+    "hero": {
+      "eyebrow": "Human-first. Collective by design.",
+      "lead": "Bring every kind of human intelligence into the circle.",
+      "intro": "Your personal insight meets your group's collective intelligence. Through deep listening and trust, make room for the wisdom that can emerge between you. An online talking circle gives each person a full turn to speak."
+    },
+    "benefits": {
+      "eyebrow": "What you discover together",
+      "heading": "Hear each person.<br>Build <em>coherence</em>."
+    },
+    "room": {
+      "eyebrow": "Your people, in one circle",
+      "heading": "Stay present with<br>the person <em>speaking</em>."
+    },
+    "modes": {
+      "eyebrow": "A circle you shape together",
+      "heading": "Your people.<br>Your <em>way of meeting</em>.",
+      "intro": "Choose a speaking order and give each person time. The room shows the turn, so you can focus on listening.",
+      "humanLead": "A place for every voice.",
+      "aiLead": "Time to listen and reflect.",
+      "boundary": "Everyone can see the room settings. You choose the speaking order, turn timer, and when recording starts."
+    },
+    "privacy": {
+      "eyebrow": "Privacy and peace of mind",
+      "intro": "Your video and audio are encrypted in transit and relayed live through Cloudflare's realtime network. You choose when to record, and your group can see the room settings."
+    },
+    "pricing": {
+      "intro": "Begin with free video circles. Choose a paid plan for more participants, longer sessions, or more participant-hours. Try your first paid plan free for 7 days and cancel anytime."
+    },
+    "faq": {
+      "items": [
+        ["How do my guests join?", "Host with an account. Guests join free in their browser using a link or six-digit room code."],
+        ["How do speaking turns work?", "The person holding the talking stick speaks while everyone else listens. Choose clockwise or counterclockwise turns, or an open round where the group chooses who speaks next."],
+        ["How do I prepare a circle?", "Name your room, choose a speaking order, and set an optional turn timer. Prepare a shared center, then send your invitation link."],
+        ["How is our conversation handled?", "Video and audio are encrypted in transit and relayed live through Cloudflare's realtime network. The host chooses when recording starts. Saved recordings are automatically deleted after a period of time to reduce server costs. You can delete them sooner."],
+        ["How many people can I invite?", "Free includes up to six people, Starter eight, and Basic or Pro twelve. These limits include you as host. Contact us about Studio."],
+        ["How long can we meet?", "Free circles last up to 30 minutes each. Starter, Basic and Pro allow circles of any length within your monthly participant-hours. Participant-hours add up the time each person spends in all your circles."],
+        ["How do I cancel my plan?", "Cancel anytime. Your plan continues until the end of the period you paid for. Export any recordings you want to keep before your plan ends."],
+        ["Can I use my own branding?", "Your room carries your circle's name. Custom logos and visual identity are in preparation. Talk to us about what your practice or program needs."]
+      ]
+    },
+    "final": {
+      "intro": "Bring your people into a circle. Give each voice time, listen deeply, and discover what takes shape between you."
+    }
+  },
+  "ai": {
+    "title": "Bring human and AI intelligence into your circle | Co-Intelligence Circle",
+    "description": "Bring personal insight, collective intelligence and AI into a live conversation. Invite Milo to participate in real time and explore what your group can discover.",
+    "hero": {
+      "eyebrow": "Human-first. Collective by design. AI-optional.",
+      "lead": "Bring every kind of intelligence into the circle.",
+      "intro": "Bring your personal insight and your group's collective intelligence together. Invite Milo, an AI participant, into the conversation in real time. Through deep listening and trust, make room for wisdom to emerge."
+    },
+    "benefits": {
+      "eyebrow": "Explore what your circle can discover",
+      "heading": "More perspectives.<br>Shared <em>coherence</em>.",
+      "cards": [
+        ["Bring your whole perspective.", "Your experience, intuition and ideas belong in the conversation. Give each person a full turn and hear what your group understands together."],
+        ["Invite AI into the conversation.", "Milo listens alongside your group in real time and contributes when the talking stick reaches its seat."],
+        ["Put shared clarity to work.", "Building coherence takes time and attention. The understanding you develop can save time in collaboration, with greater trust in your teamwork and more peace of mind."]
+      ]
+    },
+    "room": {
+      "eyebrow": "Try a circle with Milo",
+      "heading": "Invite AI to <em>participate</em>.<br>Keep every voice in view.",
+      "intro": "Milo takes a seat alongside your group. Pass the stick and choose the speaking order to see how an AI participant can join the same listening practice."
+    },
+    "method": {
+      "eyebrow": "Your first circle with AI",
+      "heading": "Gather your people.<br>Invite a <em>perspective</em>.",
+      "intro": "Set up your circle, invite your people, and bring Milo into the conversation.",
+      "steps": [
+        ["Prepare your circle", "Name the room and set an optional timer. In the circle settings, you can adjust Milo's role to suit your conversation."],
+        ["Invite your people", "Share one link. Guests join in their browser and can choose live translation in their listening language."],
+        ["Listen, then pass the stick", "Give each person a full turn. Milo contributes when the talking stick reaches its seat."]
+      ]
+    },
+    "modes": {
+      "eyebrow": "Human insight, with AI invited",
+      "heading": "Explore AI<br>on your group's <em>terms</em>.",
+      "intro": "Milo joins the live conversation as a participant. Live translation helps your group listen across languages. Choose what supports the way you meet.",
+      "humanLead": "Your group sets the practice.",
+      "aiLead": "An AI participant in your live conversation.",
+      "boundary": "Everyone can see which features are active. You choose when Milo listens and when recording or transcription starts."
+    },
+    "audience": {
+      "eyebrow": "AI in the conversations you care about",
+      "heading": "Bring AI into<br>your group's <em>practice</em>.",
+      "intro": "Invite an AI perspective into the work, learning, and questions your group shares.",
+      "cards": [
+        ["Stay present with your clients.", "Bring Milo into the discussion when another perspective would help. The visible speaking order gives each person time to finish."],
+        ["Explore decisions together.", "Hear your team's experience and invite Milo's perspective on its turn. Work toward understanding your group can act on."],
+        ["Choose what supports your group.", "Set the speaking order and decide when to invite Milo. Everyone can see when it is active and whose turn comes next."],
+        ["Bring different ways of thinking together.", "Hear learners' and community members' experiences alongside Milo's contributions. Give each participant a full turn to explore the question."],
+        ["Listen across languages.", "Each listener chooses a language. Hear the translation with the speaker's original voice softly present underneath. Live translation is in beta."],
+        ["Explore a question with another perspective.", "Gather around a question you care about. Listen to each other and see what an AI participant adds to the conversation."]
+      ]
+    },
+    "manifesto": {
+      "intro": "Your personal insight and your group's collective intelligence shape the conversation. An invited AI can add a perspective. Through deep listening and trust, make room for wisdom to emerge together."
+    },
+    "privacy": {
+      "eyebrow": "Know when AI is listening",
+      "intro": "Milo listens after you invite it, and everyone can see when it is active. Your video and audio are encrypted in transit. You choose when recording begins."
+    },
+    "faq": {
+      "items": [
+        ["How do my guests join?", "Host with an account. Guests join free in their browser using a link or six-digit room code."],
+        ["How do we choose when AI participates?", "Begin in Human Mode, then invite Milo or live translation when your group wants to use them. The room shows which features are active."],
+        ["How is our conversation handled?", "Video and audio are encrypted in transit and relayed live through Cloudflare's realtime network. You choose when recording starts. Saved recordings are automatically deleted after a period of time to reduce server costs. You can delete them sooner. An invited AI feature processes the audio it needs while active."],
+        ["How does Milo take part?", "Milo joins by voice and listens to the conversation in real time. It speaks when the talking stick reaches its seat. You can invite it to join or ask it to leave during the circle."],
+        ["What does beta mean for live translation?", "You can use live translation today with credits. Quality varies by language pair, and availability may change as we improve it. You pay for active minutes. If we pause translation, your circle continues in the original voices."],
+        ["How do we listen across languages?", "Each person chooses their listening language. They hear a translated voice with the original softly present underneath. Translation uses 2 credits per listener per active minute and is currently in beta."],
+        ["What happens when our credits run out?", "Your circle continues in Human Mode. Milo leaves and translation pauses while your group keeps talking. You choose whether to purchase more credits."],
+        ["Can I use my own branding?", "Your room carries your circle's name. Custom logos and visual identity are in preparation. Talk to us about what your practice or program needs."]
+      ]
+    },
+    "final": {
+      "heading": "What could your circle<br><em>discover together?</em>",
+      "intro": "Gather your people and invite Milo to join the conversation. Listen to each other and discover what takes shape in your circle."
+    }
+  }
+}
