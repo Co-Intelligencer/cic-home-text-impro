@@ -39,7 +39,7 @@ assert.ok(prose.includes('after a period of time to reduce server costs'), 'Upda
 assert.equal((prose.match(/\brole\b/gi) || []).length, 0, 'Role customization belongs in the setup subpage');
 if (isAI) {
   assert.ok($('#method a[href$="how-it-works/#steps"]').length, 'AI setup links to the full guide');
-  assert.match($('.hero-intro').text(), /conversation in real time/);
+  assert.match($('.hero-intro').text(), /real-time AI that listens and contributes to the conversation/);
   assert.match($('#credits').text(), /2 credits per listener per active minute/);
 } else {
   const human = load(source);
